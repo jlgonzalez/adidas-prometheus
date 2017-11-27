@@ -29,7 +29,7 @@ $ docker ps
 
 Take a look at the files:
 
-- `/sys/fs/cgroup/memory/docker/<longid>/cpuacct.stat`
+- `/sys/fs/cgroup/cpu/docker/<longid>/cpuacct.stat`
 - `/sys/fs/cgroup/memory/docker/<longid>/memory.stat`
 
 
