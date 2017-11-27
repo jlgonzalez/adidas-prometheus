@@ -7,6 +7,22 @@
 In this workshop you will log into your VMs (or locally if you've chosen to develop locally) and run
 some containers. You will apply some load and use docker's tools to inspect resource usage.
 
+## Instal Docker-Compose
+
+First you will need to install docker-compose. The version in apt-get is too old, so use these commands to install the binary directly:
+
+```bash
+sudo curl -L https://github.com/docker/compose/releases/download/1.17.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+Then when you get the version it should read:
+
+```bash
+$ docker-compose -v
+docker-compose version 1.17.1, build 6d101fb
+```
+
 ## Webservers!
 
 Let's run a simple docker-compose file. Inside this file we're running:
